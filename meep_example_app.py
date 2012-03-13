@@ -407,6 +407,7 @@ class MeepExampleApp(object):
             return fn(environ, start_response)
         except:
             tb = traceback.format_exc()
+            print tb
             x = "<h1>Error!</h1><pre>%s</pre>" % (tb,)
 
             status = '500 Internal Server Error'
