@@ -404,6 +404,17 @@ class MeepExampleApp(object):
             return ["Page not found."]
 
         try:
+            # allows us to trace the threads and users during every call
+            # especially useful under nose if a test fails
+            """print "Threads: "
+            for key in meeplib._threads:
+                print "k: ", key
+                print "v: ", meeplib._threads[key].title
+            print "Users: "
+            for key in meeplib._user_ids:
+                print "k: ", key
+                print "v: ", meeplib._user_ids[key].username"""
+           
             return fn(environ, start_response)
         except:
             tb = traceback.format_exc()
