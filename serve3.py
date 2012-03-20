@@ -151,7 +151,7 @@ if __name__ == "__main__":
     port = 8000
 
     #print "binding", interface, port
-    print "Homework 7 Socket Server"
+    print "Homework 8 Threaded Socket Server"
     print "Serving HTTP on port 8000..."
     sock = socket.socket()
     sock.bind( (interface, port) )
