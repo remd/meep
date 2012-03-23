@@ -24,7 +24,7 @@ def handle_connection(sock, app):
             if not data:
                 break
 
-            print "data:", (data,)
+            #print "data:", (data,)
 
             # we need to check for POST and grab the Content-Length integer
             tmp = data
@@ -33,7 +33,7 @@ def handle_connection(sock, app):
             # get request type
             request = allLines.pop(0)
             requestInfoList = request.split(' ')
-            if requestInfoList[0] == "POST":
+            if "Content-Type: application/x-www-form-urlencoded" in allLines:
                 contentLength = 0
                 # get the content length
                 for line in allLines:
