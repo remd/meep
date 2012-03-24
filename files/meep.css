@@ -1,0 +1,40 @@
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	height: 1250px;
+	background: #8ebce0 url(backgroundfog.jpg) no-repeat center;
+	background-attachment: fixed;
+	}
+body { 
+	background: url(bodybg.png) repeat;
+	margin: auto; 
+	width: 650px;
+	font: 75% arial;
+	line-height: 1.5em;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+}
+a:link { 
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	color: #594338;
+}
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+a:visited:hover {
+	font-weight: bold;
+	text-decoration: none;
+	color: #594338;
+}
+

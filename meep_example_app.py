@@ -3,6 +3,7 @@ import meepcookie
 import Cookie
 import traceback
 import cgi
+from file_server import FileServer
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -392,7 +393,9 @@ class MeepExampleApp(object):
                       '/m/list': self.list_messages,
                       '/m/add_thread': self.add_thread,
                       '/m/delete_action': self.delete_message_action,
-                      '/m/reply': self.reply
+                      '/m/reply': self.reply,
+                      '/favicon.ico': FileServer("files/favicon.ico"),
+                      '/meep.css': FileServer("files/meep.css")
                       }
 
         # see if the URL is in 'call_dict'; if it is, call that function.
