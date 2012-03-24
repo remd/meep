@@ -1,7 +1,5 @@
 import mimetypes
 mimetypes.init()
-#global mimetypes = {"txt" : "text/plain", "jpg" : "image/jpeg", "jpeg" : "image/jpeg",\
-#"png" : "image/png", "css" : "text/css", "gif" : "image/gif"}
 
 class FileServer(object):
     def __init__(self, filename):
