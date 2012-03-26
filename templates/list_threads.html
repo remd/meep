@@ -3,6 +3,9 @@
 {% block title %}Threads{% endblock title %}
 
 {% block body %}
+{% if not threads %}
+<p>There are no threads to display.</p>
+{% endif %}
 {% for thread in threads %}
     <hr>
     <h2>{{ thread.title }}</h2>

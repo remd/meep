@@ -2,19 +2,19 @@
 html {
 	margin: 0;
 	padding: 0;
-	height: 1250px;
-	background: #8ebce0 url(backgroundfog.jpg) no-repeat center;
-	background-attachment: fixed;
+	background: #6984a0; 
 	}
 body { 
-	background: url(bodybg.png) repeat;
+	background: #bbc6d3;
+    padding: 50px;
 	margin: auto; 
 	width: 650px;
 	font: 75% arial;
-	line-height: 1.5em;
+    border-left: 1px solid;
+    border-right: 1px solid;
 	}
 p { 
-	margin-top: 0; 
+    color: #0d0d0d;
 	text-align: justify;
 }
 a:link { 
@@ -25,7 +25,7 @@ a:link {
 a:hover {
 	font-weight: bold;
 	text-decoration: none;
-	color: #594338;
+	color: #0d0d0d;
 }
 a:visited {
 	font-weight: bold;
@@ -35,6 +35,6 @@ a:visited {
 a:visited:hover {
 	font-weight: bold;
 	text-decoration: none;
-	color: #594338;
+	color: #0d0d0d;
 }
 

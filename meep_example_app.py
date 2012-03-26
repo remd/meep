@@ -241,15 +241,11 @@ class MeepExampleApp(object):
         
         user = meeplib.get_user(username)
         s = []
-        if threads:
-            s.append(render_page("list_threads.html", threads=threads, user=user))
-        else:
-            s.append("There are no threads to display.<p><hr><a href='/'>index</a>")
 
         headers = [('Content-type', 'text/html')]
         start_response("200 OK", headers)
 
-        return ["".join(s)]
+        return render_page("list_threads.html", threads=threads, user=user)
 
     def add_thread(self, environ, start_response):
         # get cookie if there is one
