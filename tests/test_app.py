@@ -48,7 +48,7 @@ class TestApp(unittest.TestCase):
             assert ('Content-type', 'text/html') in headers
 
         data = self.app(environ, fake_start_response)
-        assert 'index' in data[0]
+        assert 'index' in data
 
     def test_create_user(self):
         environ = {}                    # make a fake dict
@@ -132,9 +132,9 @@ class TestApp(unittest.TestCase):
 
         data = self.app(environ, fake_start_response)
 
-        assert 'index' in data[0]
-        assert "Test title" in data[0]
-        assert "Test message" in data[0]
+        assert 'index' in data
+        assert "Test title" in data
+        assert "Test message" in data
 
     def test_reply(self):
         environ = {}                    # make a fake dict
@@ -179,8 +179,8 @@ class TestApp(unittest.TestCase):
 
         data = self.app(environ, fake_start_response)
 
-        assert 'index' in data[0]
-        assert "replytest" in data[0]
+        assert 'index' in data
+        assert "replytest" in data
 
     def tearDown(self):
         pass
